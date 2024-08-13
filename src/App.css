@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --bg-elements-color: hsl(209, 23%, 22%);
+  --bg-color: hsl(207, 26%, 17%);
+  --text-color: hsl(0, 0%, 100%);
+}
+.light-mode {
+  --text-color: hsl(200, 15%, 8%);
+  --light-mode-input: hsl(0, 0%, 52%);
+  --bg-color: hsl(0, 0%, 98%);
+  --bg-elements-color: hsl(0, 0%, 100%);
+}
+
+.bg-elements {
+  background-color: var(--bg-elements-color);
+}
+
+.bg-main-color {
+  background-color: var(--bg-color);
+}
+
+.custom-text-white {
+  color: var(--text-color);
+}
+
+#root {
+  max-width: 1440px;
+  margin: 0 auto;
+  /* padding: 2rem; */
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+/* .main-page { */
+/* } */
+
+.search-icon {
+  left: 30px;
+  top: 26px;
+}
+
+.all-countries {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 60px;
+}
+
+.all-countries img {
+  aspect-ratio: 16/9;
+}
+
+.each-country img {
+  aspect-ratio: 10/5;
+}
+
+.back-btn {
+  width: 50%;
+  max-width: 125px;
+  cursor: pointer;
+}
+
+.dropdown-options {
+  list-style: none;
+  text-align: left;
+  width: 210px;
+}
+
+.dropdown-options li {
+  cursor: pointer;
+  padding: 5px 20px;
+  transition: all 0.3s ease;
+}
+
+.dropdown-options li:hover {
+  background-color: var(--bg-color);
+}
+
+.dropdown-options li {
+  cursor: pointer;
+  padding: 5px 20px;
+}
+
+.dropdown-options {
+  cursor: pointer;
+}
+
+.dropdown-display p {
+  width: 115px;
+  text-align: start;
+}
+
+.where {
+  font-size: 30px;
+}
+
+
+
+@media (max-width: 1115px) {
+  .all-countries {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .all-countries {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .each-country img {
+    aspect-ratio: 16/9;
+    max-width: 300px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 500px) {
+  .all-countries {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .where {
+    font-size: 14px;
+  }
+
+  .light-dark {
+    font-size: 10px;
+  }
+
+  .inner-each {
+    flex-direction: column;
+  }
+
+  .inner-content {
+   margin-top: 50px;
+  }
+
+  .borderr {
+    flex-direction: column;
+    width: 100px;
+  }
+
+  .input {
+    width: 100px;
+    max-width: 500px;
+  }
+
+}
+/* =============================== */
+
+.searchBox {
+  width: 250px;
+}
+
+::placeholder {
+  padding-left: 50px;
+}
